@@ -1,18 +1,134 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "杜脚本", HidePremium = false, SaveConfig = true,ConfigFolder = "dujiaobeng"})
-local plrs = game:GetService("Players")
-local plr = plrs.LocalPlayer
-local TeleportService = game:GetService('TeleportService')
-local Gui = Instance.new("ScreenGui")
-local Message = game:GetService("StarterGui")
-local TweenService = game:GetService('TweenService')
-local CoreGui = game:GetService('CoreGui')
-local Tab = Window:MakeTab({
-    Name = "杜脚本注入",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-    })
-local Section = Tab:AddSection({	Name = "功能"})Tab:AddButton({	Name = "飞行",	Callback = function()
-loadstring([[loadstring(game:HttpGet(('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'),true))()]])()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "确认身份",
+
+    Text = "正在验证....",
+
+    Duration = 5
+
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="pro_xx723"then
+
+_G.qweasd=true
+
+elseif a=="pro_xx723"then
+
+_G.qweasd=true
+
+elseif a=="lipuace"then
+
+_G.qweasd=true
+
 end
-})OrionLib:Init()
+
+if _G.qweasd==true then
+
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "验证结果",
+
+    Text = a.."验证身份成功",
+
+    Duration = 5
+
+})
+
+  wait(3)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,IntroText = "红脚本", ConfigFolder = "xiao"})
+local Tab = Window:MakeTab({
+    Name = "首页",Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+        Name = "复制作者QQ",	Callback = function()
+     setclipboard("3460915131")
+        end
+})
+local Tab = Window:MakeTab({
+	Name = "通用",	Icon = "rbxassetid://4483345998",
+})
+	PremiumOnly = false
+Tab:AddButton({
+	Name = "无限跳",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+end
+})
+Tab:AddButton({
+    Name = "点击传送",
+    Callback = function()
+        Tool = Instance.new("Tool")
+        Tool.Name = "点击传送”
+        Tool.RequiresHandle = false
+        Tool.Parent = game.Players.LocalPlayer.Backpack
+        Tool.Activated:Connect(function()
+            Mouse = game.Players.LocalPlayer:GetMouse().Hit+Vector3.new(0, 2.5, 0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Mouse.X, Mouse.Y, Mouse.Z)
+        end)
+    end
+})
+Tab:AddButton({
+    Name = "跟踪玩家",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+    end
+})
+Tab:AddButton({
+	Name = "变身",	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+    end
+})
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
+Tab:AddButton({
+
+	Name = "飞行",		Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+	end
+}) 
+Tab:AddButton({
+    Name = "范围",
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0a7cG84K"))()
+end
+}) 
+Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+  	end    
+})
+else --验证失败执行↓
+
+setclipboard("887524676")
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "验证失败",
+
+    Text = "你并没有白名单已复制链接加入群获得白名单",
+
+    Duration = 10
+
+})
+
+OrionLib:Init()
