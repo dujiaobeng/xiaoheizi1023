@@ -14,19 +14,19 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="pro_xx723"then
 
-_G.qweasd=true
+_G.pro=true
 
 elseif a=="pro_xx723"then
 
-_G.qweasd=true
+_G.pro=true
 
 elseif a=="lipuace"then
 
-_G.qweasd=true
+_G.pro=true
 
 end
 
-if _G.qweasd==true then
+if _G.pro==true then
 
     local CoreGui = game:GetService("StarterGui")
 
@@ -40,9 +40,9 @@ CoreGui:SetCore("SendNotification", {
 
 })
 
-  wait(3)
+  wait(2)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,IntroText = "红脚本", ConfigFolder = "xiao"})
+local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,IntroText = "红脚本", ConfigFolder = "qun"})
 local Tab = Window:MakeTab({
     Name = "首页",Icon = "rbxassetid://4483345998",
     PremiumOnly = false
