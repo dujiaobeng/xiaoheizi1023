@@ -12,21 +12,17 @@ CoreGui:SetCore("SendNotification", {
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a=="pro_xx723"then
+if a=="proxx723"then
 
-_G.pro=true
+_G.qweasd=true
 
 elseif a=="pro_xx723"then
 
-_G.pro=true
-
-elseif a=="lipuace"then
-
-_G.pro=true
+_G.qweasd=true
 
 end
 
-if _G.pro==true then
+if _G.qweasd==true then
 
     local CoreGui = game:GetService("StarterGui")
 
@@ -41,83 +37,177 @@ CoreGui:SetCore("SendNotification", {
 })
 
   wait(2)
+
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,IntroText = "红脚本", ConfigFolder = "qun"})
-local Tab = Window:MakeTab({
-    Name = "首页",Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-Tab:AddButton({
-        Name = "复制作者QQ",	Callback = function()
-     setclipboard("3460915131")
-        end
-})
-local Tab = Window:MakeTab({
-	Name = "通用",	Icon = "rbxassetid://4483345998",
-})
+
+local Window = OrionLib:MakeWindow({Name = "蕴（测试）", HidePremium = false, SaveConfig = true,IntroText = "蕴脚本", ConfigFolder = "qun"})
+
+local Tab =Window:MakeTab({
+
+	Name = "首页",	Icon = "rbxassetid://4483345998",
+
 	PremiumOnly = false
+
+})
+
 Tab:AddButton({
+
+	Name = "复制作者QQ",	Callback = function()
+
+     setclipboard("3460915131")
+
+  	end
+
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "通用",	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+Tab:AddButton({
+
 	Name = "无限跳",
+
 	Callback = function()
+
 loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+
 end
+
 })
+
 Tab:AddButton({
-    Name = "点击传送",
-    Callback = function()
-        Tool = Instance.new("Tool")
-        Tool.Name = "点击传送”
-        Tool.RequiresHandle = false
-        Tool.Parent = game.Players.LocalPlayer.Backpack
-        Tool.Activated:Connect(function()
-            Mouse = game.Players.LocalPlayer:GetMouse().Hit+Vector3.new(0, 2.5, 0)
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Mouse.X, Mouse.Y, Mouse.Z)
-        end)
-    end
-})
-Tab:AddButton({
-    Name = "跟踪玩家",
-    Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
-    end
-})
-Tab:AddButton({
+
 	Name = "变身",	Callback = function()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+
     end
+
 })
+
+Tab:AddButton({
+
+    Name = "点击传送",
+
+    Callback = function()
+
+        Tool = Instance.new("Tool")
+
+        Tool.Name = "点击传送"
+
+        Tool.RequiresHandle = false
+
+        Tool.Parent = game.Players.LocalPlayer.Backpack
+
+        Tool.Activated:Connect(function()
+
+            Mouse = game.Players.LocalPlayer:GetMouse().Hit+Vector3.new(0, 2.5, 0)
+
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Mouse.X, Mouse.Y, Mouse.Z)
+
+        end)
+
+    end
+
+})
+
+Tab:AddButton({
+
+    Name = "跟踪玩家",
+
+    Callback = function()
+
+        loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+
+    end
+
+})
+
 Tab:AddToggle({
+
 	Name = "夜视",
+
 	Default = false,
+
 	Callback = function(Value)
+
 		if Value then
+
 		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
 		else
+
 		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
 		end
+
 	end
+
 })
+
 Tab:AddButton({
 
 	Name = "飞行",		Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
-	end
-}) 
-Tab:AddButton({
-    Name = "范围",
-    Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/0a7cG84K"))()
-end
-}) 
-Tab:AddButton({
-	Name = "透视",
-	Callback = function()
-     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
-  	end    
-})
-else --验证失败执行↓
 
-setclipboard("887524676")
+loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+
+	end
+
+})    
+
+Tab:AddButton({
+
+  Name = "USA（卡密：USA AER）",
+
+  Callback = function()
+
+    getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
+
+  end
+
+})
+
+ 
+
+Tab:AddButton({
+
+	Name = "龙脚本",	Callback = function()
+
+  loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\108\121\121\97\105\110\105\47\108\111\110\47\109\97\105\110\47\108\105\115\119\109\34\41\41\40\41")()
+
+  	end
+
+})
+
+Tab:AddButton({
+
+    Name = "范围",
+
+    Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/0a7cG84K"))()
+
+end
+
+})    
+
+Tab:AddButton({
+
+	Name = "透视",
+
+	Callback = function()
+
+     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+
+  	end
+    else --验证失败执行↓
+
+setclipboard("3460915131")
 
 local CoreGui = game:GetService("StarterGui")
 
