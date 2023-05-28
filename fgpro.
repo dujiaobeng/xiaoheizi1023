@@ -131,4 +131,4 @@ CoreGui:SetCore("SendNotification", {
 
 })
 
-OrionLib:Init()
+end
