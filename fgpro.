@@ -19,7 +19,7 @@ CoreGui:SetCore("SendNotification", {
     Text = a.."验证身份成功",
     Duration = 5,
 })
-  wait(3)
+  wait(5)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
 local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,IntroText = "红脚本（测试中）", ConfigFolder = "pro"})
 local Tab =Window:MakeTab({
