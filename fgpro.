@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "杜脚本", HidePremium = false, SaveConfig = true,ConfigFolder = "dujiaobeng"})
+local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,ConfigFolder = "dujiaobeng"})
 local plrs = game:GetService("Players")
 local plr = plrs.LocalPlayer
 local TeleportService = game:GetService('TeleportService')
