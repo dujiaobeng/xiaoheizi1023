@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "红脚本", HidePremium = false, SaveConfig = true,ConfigFolder = "pro"})
+local Window = OrionLib:MakeWindow({Name = "杜脚本", HidePremium = false, SaveConfig = true,ConfigFolder = "dujiaobeng"})
 local plrs = game:GetService("Players")
 local plr = plrs.LocalPlayer
 local TeleportService = game:GetService('TeleportService')
@@ -8,19 +8,10 @@ local Message = game:GetService("StarterGui")
 local TweenService = game:GetService('TweenService')
 local CoreGui = game:GetService('CoreGui')
 local Tab = Window:MakeTab({
-    Name = "筒介",
+    Name = "通用",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "复制作者QQ"，Callback = function()
-     setclipboard("3460915131")
-  	end
-})
-local Section = Tab:AddSection({Name = "通用"})
-Tab:AddButton({	Name = "飞行",	
-Callback = function()
-loadstring([[loadstring(game:HttpGet(('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'),true))()]])()
+    })
+local Section = Tab:AddSection({	Name = "功能"})Tab:AddButton({	Name = "飞行",	Callback = function()loadstring([[loadstring(game:HttpGet(('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'),true))()]])()
 end
-})
-OrionLib:Init()
+})OrionLib:Init()
