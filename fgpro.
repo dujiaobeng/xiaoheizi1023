@@ -65,9 +65,6 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "透视",	Callback = function()
-
-Tab:AddButton({
 	Name = "超高画质",	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()end}) 
 Tab:AddButton({
