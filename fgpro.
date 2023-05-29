@@ -66,8 +66,24 @@ Tab:AddButton({
 })
 Tab:AddButton({
 	Name = "超高画质",	Callback = function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()end}) 
+        loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+	end
+})   
 Tab:AddButton({
-        Name = "飞车",Callback = function() 
-	loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()	end
+	Name = "飞车",
+	Callback = function() 
+	loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+	end
+}) 
+Tab:AddButton({
+	Name = "穿墙",
+	Callback = function()      	
+	loadstring(game:HttpGet("https://pastebin.com/raw/jvyN5hT8"))()  	
+	end
+})
 	
+	
+
+		
+
+		
