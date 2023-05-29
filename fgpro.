@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "确认身份",
     Text = "正在验证....",
-    Duration = 5, --时间
+    Duration = 5,
 })
 local a=tostring(game.Players.LocalPlayer.Character);
 if a=="proxx723"then
