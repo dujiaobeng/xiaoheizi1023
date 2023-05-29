@@ -371,30 +371,13 @@ warn (".........................................................................
 
             end
 
- 
-
- 
-
- 
-
- 
-
             end
-
         end
-
         end
-
         end
-
- 
-
     wait (5)
-
         for i,v in pairs (game:GetService("Players"):GetChildren()) do
-
             for i,k in pairs(v.Character:GetChildren()) do
-
             for i,l in pairs(k:GetChildren()) do 
             if l.ClassName == "SurfaceGui" then
                 l:Remove()
@@ -406,5 +389,8 @@ warn (".........................................................................
 end)
 Tab:AddButton({
 	Name = "超高画质",	Callback = function()
-	
+	loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()end}) 
+	Tab:AddButton({
+        Name = "飞车",Callback = function() 
+	loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()	end
 	
