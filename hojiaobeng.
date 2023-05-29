@@ -4,7 +4,8 @@ CoreGui:SetCore("SendNotification", {
     Text = "正在验证....",
     Duration = 5
 })
-local a=tostring(game.Players.LocalPlayer.Character);
+local
+a=tostring(game.Players.LocalPlayer.Character);
 if a=="pro_xx723"then
 _G.asdzxc=true
 elseif a=="pro_xx723"then
