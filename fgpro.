@@ -8,10 +8,17 @@ local Message = game:GetService("StarterGui")
 local TweenService = game:GetService('TweenService')
 local CoreGui = game:GetService('CoreGui')
 local Tab = Window:MakeTab({
-    Name = "通用",
+    Name = "简介",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
     })
-local Section = Tab:AddSection({	Name = "功能"})Tab:AddButton({	Name = "飞行",	Callback = function()loadstring([[loadstring(game:HttpGet(('https://gist.githubusercontent.com/meozoneYT/bf037dff9f0a70017304ddd67fdcd370/raw/e14e74f425b060df523343cf30b787074eb3c5d2/arceus%2520x%2520fly%25202%2520obflucator'),true))()]])()
-end
+local Section = Tab:AddSection({	Name = "复制"})
+Tab:AddButton({
+	Name = "复制作者QQ",	Callback = function()
+     setclipboard("3460915131")
+  	end
+Tab:AddButton({
+	Name = "复制QQ群号",	Callback = function()
+     setclipboard("887524676")
+  	end
 })OrionLib:Init()
