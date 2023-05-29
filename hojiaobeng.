@@ -27,7 +27,7 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "复制QQ群号",	Callback = function()
+	Name = "复制QQ作者",	Callback = function()
      setclipboard("887524676")
   	end
 })
