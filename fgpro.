@@ -134,12 +134,6 @@ Tab:AddButton({
 	end
 }) 
 Tab:AddButton({
-	Name = "穿墙",
-	Callback = function()      	
-	loadstring(game:HttpGet("https://pastebin.com/raw/jvyN5hT8"))()  	
-	end
-}) 
-Tab:AddButton({
 	Name = "透视",	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
 	end
