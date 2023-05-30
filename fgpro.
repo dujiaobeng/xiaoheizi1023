@@ -107,12 +107,6 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name = "跟踪玩家",
-    Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
-    end
-})
-Tab:AddButton({
 	Name = "防止掉线（反挂机）",	Callback = function()
 	print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
