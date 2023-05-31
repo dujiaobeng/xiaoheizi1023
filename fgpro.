@@ -162,7 +162,35 @@ Tab:AddButton({
 	Name = "一路向西范围",	Callback = function() 
 	loadstring(game:GetObjects("rbxassetid://10040722920")[1].Source)()
 	end
-})	
+})
+local Tab =Window:MakeTab({
+	Name = 付费脚本",	Icon = "rbxassetid://4483345998",	
+	PremiumOnly = false
+Tab:AddButton({
+	Name = "白脚本",	Callback = function() 
+	_G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/baijiaobengV2.0beta/main/%E7%99%BD%E8%84%9A%E6%9C%ACbeta'),true))() 
+	end
+})
+Tab:AddButton({
+	Name = "走马观花",	Callback = function() 
+	getgenv().zhanghuihuihui="走马观花作者 紅";
+        loadstring(game:HttpGet("https://github.com/jsGay8s/RBX_DEV/raw/main/"..game.PlaceId..".lua"))("走马观花X-2023-04-24更新!") 
+	end
+})
+local Tab =Window:MakeTab({
+	Name = "blox fruits",	Icon = "rbxassetid://4483345998",	
+	PremiumOnly = false
+Tab:AddButton({
+	Name = "HOHO",	Callback = function() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() 
+	end
+})
+Tab:AddButton({
+	Name = "NEVA",	Callback = function() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))() 
+	end
+})
     else
         game.Players.LocalPlayer:Kick("卡密错误")
     end
