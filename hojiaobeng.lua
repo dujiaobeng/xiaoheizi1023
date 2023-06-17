@@ -1214,9 +1214,9 @@ setmetatable(
         end}
 )
 
-local win1 = library:CreateTab("详情");
+local win1 = library:CreateTab("脚本");
 
-win1:NewButton("自己看着填", function()
+win1:NewButton("小黑子露出了鸡脚", function()
     library:SelectNotify{
         Title = "小黑子",
         Text = "食不食油饼",
@@ -1270,7 +1270,7 @@ win1:NewSlider("滑块", "滑块id", _default, min, max, showFloat, function(val
 end)
 
 
-win1:NewToggle("按钮", "id随便", false, function(bool)
+win1:NewToggle("按钮", "真的？", false, function(bool)
     print(bool)
 end)
 
