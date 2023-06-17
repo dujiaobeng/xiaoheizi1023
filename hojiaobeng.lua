@@ -1214,37 +1214,7 @@ setmetatable(
         end}
 )
 
-local win1 = library:CreateTab("脚本");
-
-win1:NewButton("小黑子露出了鸡脚", function()
-    library:SelectNotify{
-        Title = "小黑子",
-        Text = "食不食油饼",
-        TrueText = "对呀",
-        FalseText = "我错了",
-        Callback = function()
-            print("我按了按钮");
-        end,
-        Duration = 3, -- 几秒后消失
-    }
-end)
-
-win1:NewButton("自己看着填", function()
-    library:Notify{
-        Title = "标题",
-        Text = "内容",
-        Duration = 5, -- 几秒后消失
-    }
-end)
-
-win1:NewSeparator()
--- 创建一个空白区域
-
-win1:NewButton("十字架（瞎找的，脚本就是这个格式）", function()--演示
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
-    print("btn3");
-end)
-local win1 = library:CreateTab("a");
+local win1 = library:CreateTab("防点");
 win1:NewToggle("a", "i", true, function(bool)
     print(bool)
         flags.light = val
@@ -1264,40 +1234,34 @@ local min = 0; -- 最小值
 local max = 300; -- 最大值
 local showFloat = false; -- 显示小数点
 
+		
+local win1 = library:CreateTab("小黑子对话");
 
-win1:NewSlider("滑块", "滑块id", _default, min, max, showFloat, function(value)
-    print(("现在是%d"):format(value));
+win1:NewButton("小黑子露出了鸡脚", function()
+    library:SelectNotify{
+        Title = "小黑子",
+        Text = "食不食油饼",
+        TrueText = "对呀",
+        FalseText = "我错了",
+        Callback = function()
+            print("我按了按钮");
+        end,
+        Duration = 3, -- 几秒后消失
+    }
 end)
 
 
-win1:NewToggle("按钮", "真的？", false, function(bool)
-    print(bool)
+
+win1:NewSeparator()
+-- 创建一个空白区域
+
+win1:NewButton("脚本", function()
+    library:Notify{
+        Title = "标题",
+        Text = "内容",
+        Duration = 5, -- 几秒后消失
+    }
 end)
-
-
-local this_table = {
-"L",
-"i",
-"n",
-"u",
-"x",
-}
-win1:NewDropdown("下拉列表", "这个有用", this_table, function(item)
-	print(item);
-end)
-
-win1:NewButton("添加元素", function()
-    library.flags["这个有用"]:AddOption("wow");
-end)
-
-win1:NewButton("删除元素", function()
-    library.flags["这个有用"]:RemoveOption("L");
-end)
-
-win1:NewBox("文本盒子", "请输入!", function(text)
-    print(text);
-end)
-
 
 
 end)()
