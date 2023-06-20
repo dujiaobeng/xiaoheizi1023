@@ -19,7 +19,7 @@ local credits = creds:section("UI设置",true)
     end)
 
 local creds = window:Tab("脚本")
-local bin = creds:section("付费",true)
+local credits = creds:section("付费",true)
     credits:Button("白脚本",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
 _G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
