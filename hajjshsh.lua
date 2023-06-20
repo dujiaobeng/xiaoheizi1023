@@ -1359,7 +1359,7 @@ local creds = window:Tab("主要")
 
 local bin = creds:section("信息",true)
 
-    bin:Label("你的用户名:"..game.Players.LocalPlayer.Name..)
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Name)
     bin:Label("你的注入器:"..identifyexecutor())
 
 local credits = creds:section("UI设置",true)
