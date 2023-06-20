@@ -1353,18 +1353,18 @@ end
       return window
     end
 
-local window = library:new("红--Evade")
+local window = library:new("红脚本")
 
-local creds = window:Tab("主要",'3460915131')
+local creds = window:Tab("主要")
 
 local bin = creds:section("信息",true)
 
-    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Humanoid.Name)
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Name..)
     bin:Label("你的注入器:"..identifyexecutor())
 
 local credits = creds:section("UI设置",true)
 
-    credits:Button("摧毁UI",function()
+    credits:Button("关闭脚本",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
 
