@@ -23,8 +23,8 @@ local credits = creds:section("UI设置",true)
 local creds = window:Tab("脚本")
 local credits = creds:section("付费",true)
     credits:Button("白脚本",function()
-_G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/baijiaobengV2.0beta/main/%E7%99%BD%E8%84%9A%E6%9C%ACbeta'),true))() 
+_G.baiscript='作者ababa和修购，以及我的老婆人'
+loadstring("\112\114\105\110\116\40\34\32\89\79\85\82\32\83\67\82\73\80\84\32\72\69\82\69\33\33\32\34\41\10")()
     end)
     credits:Button("走马观花x",function()
 getgenv().zhanghuihuihui="走马观花作者 紅";
