@@ -1,4 +1,4 @@
-getgenv().7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
+getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 (function(define)
 	repeat
 		game:GetService("RunService").Heartbeat:wait()
@@ -241,7 +241,7 @@ getgenv().7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 			return is_dev;
 		end
 		--↓ 判断代码是否被修改
-		if (getgenv().zhanghuihuihui ~= "红脚本作者 坤" or not getgenv().7461pro) and not isDev() then
+		if (getgenv()._7461pro ~= "红脚本作者 坤" or not getgenv()._7461pro) and not isDev() then
 			plr:Kick("请不要修改代码");
 			task.wait(.01);
        -- while true do end
