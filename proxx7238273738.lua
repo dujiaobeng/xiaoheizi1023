@@ -273,7 +273,8 @@ getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 		_warn('---------------')
     
     --<<  UI 部分, 不懂代码请勿修改 >>-	
-local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dujiaobeng/xiaoheizi1023/main/553368745735.lua"))()
+        wait(0.3)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dujiaobeng/xiaoheizi1023/main/553368745735.lua"))()
 	
 		--<< 游戏功能部分 >>
 		
