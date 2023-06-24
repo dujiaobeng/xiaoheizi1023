@@ -1,4 +1,5 @@
-getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
+getgenv()._7461pro="红脚本作者 坤";
+loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.PlaceId..".lua"))("红脚本")--> 不要改, 改了会被踢
 (function(define)
 	repeat
 		game:GetService("RunService").Heartbeat:wait()
@@ -246,7 +247,8 @@ getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 			task.wait(.01);
        -- while true do end
 		end
-		getgenv()._7461pro = nil;
+		getgenv()._7461pro="红脚本作者 坤";
+loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.PlaceId..".lua"))("红脚本") nil;
 	end
 	local functions = {
 		checkModify
