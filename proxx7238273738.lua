@@ -223,7 +223,7 @@ getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 	
 		local develop = {  --> 脚本开发者列表, 里面双引号填写游戏用户名, 脚本开发者可以免去白名单检查
 			"4v5n7n",
-			"MIXI_SERVICE1",
+			"pro_2023625",
 			"cnmlgbnmsldsbcnm",
 			"baoanke",
 			"ydbfj138",
