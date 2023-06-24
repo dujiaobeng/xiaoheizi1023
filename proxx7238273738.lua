@@ -233,6 +233,7 @@ getgenv()._7461pro = "红脚本作者 坤"-> 不要改, 改了会被踢
 			"1247l00",
 			"qweASEwrq",
 			"wpm_kwpd",
+			"ChinayDOORS",
 		}
 		local plr = game:GetService("Players").LocalPlayer;
 		local is_dev = false;
