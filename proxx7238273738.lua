@@ -1,5 +1,4 @@
-getgenv()._7461pro="红脚本作者 坤";
-loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.PlaceId..".lua"))("红脚本")--> 不要改, 改了会被踢
+getgenv()._7461pro = "红脚本作者 坤"-> 不要改, 改了会被踢
 (function(define)
 	repeat
 		game:GetService("RunService").Heartbeat:wait()
@@ -229,6 +228,11 @@ loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.Plac
 			"baoanke",
 			"ydbfj138",
 			"7461pro",
+			"shwizhhehs",
+			"erth6645",
+			"1247l00",
+			"qweASEwrq",
+			"wpm_kwpd",
 		}
 		local plr = game:GetService("Players").LocalPlayer;
 		local is_dev = false;
@@ -247,8 +251,7 @@ loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.Plac
 			task.wait(.01);
        -- while true do end
 		end
-		getgenv()._7461pro="红脚本作者 坤";
-loadstring(game:HttpGet("https://github.com/7461wu/114514/blob/main/"..game.PlaceId..".lua"))("红脚本") nil;
+		getgenv()._7461pro = nil;
 	end
 	local functions = {
 		checkModify
