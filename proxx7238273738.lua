@@ -225,7 +225,7 @@ getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 			"4v5n7n",
 			"MIXI_SERVICE1",
 			"MIXI_SERVICE2",
-			"MIXI_SERVICE3",
+			"baoanke",
 			"ydbfj138",
 			"7461pro",
 		}
