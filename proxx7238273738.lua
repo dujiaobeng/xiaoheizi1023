@@ -246,7 +246,7 @@ getgenv()._7461pro = "红脚本作者 坤" --> 不要改, 改了会被踢
 			task.wait(.01);
        -- while true do end
 		end
-		getgenv().7461pro = nil;
+		getgenv()._7461pro = nil;
 	end
 	local functions = {
 		checkModify
