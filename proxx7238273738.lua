@@ -222,8 +222,8 @@
 	
 		local develop = {  --> 脚本开发者列表, 里面双引号填写游戏用户名, 脚本开发者可以免去白名单检查
 			"4v5n7n",
-			"pro_2023625",
-			"cnmlgbnmsldsbcnm",
+			"sheepsN1",
+			"hufdvurd11",
 			"baoanke",
 			"ydbfj138",
 			"7461pro",
