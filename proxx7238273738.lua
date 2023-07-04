@@ -2,7 +2,7 @@
 	repeat
 		game:GetService("RunService").Heartbeat:wait()
 	until game:IsLoaded();
-	local function check_exploit()  --> 检查注入器配置, 如果注入器不行就不能加载脚本
+	local function check_exploit()
 		if not getgenv then
 			return false;
 		end
@@ -11,7 +11,7 @@
 	local whitelisted = true;
 	
 	
-	local _CONFIGS = {  --> 游戏配置列表, 如果不懂请勿修改, 可以改数字
+	local _CONFIGS = { 
 	   ["UI_NAME"] = define,
 	   ["总开关"] = nil,
 	   ["防误触开关"] = true,
@@ -33,14 +33,14 @@
 	   ["传送模式"] = 2,
 	   ["飞行速度"] = 4,
 	   ["步行速度"] = 16,
-	   ["跳跃力"] = 50,  --> 比如这个50  代表加载脚本初始的跳跃力是50, 可以改 100或者150等等
+	   ["跳跃力"] = 50,
 	   ["悬浮高度"] = 0,
 	   ["重力"] = 198,
 	   ["相机焦距"] = 100,
 	   ["广角"] = 70,
 	};
 	
-	local function ClearConfig()  --> 清除游戏配置功能
+	local function ClearConfig()
 		if _CONFIGS["总开关"] ~= nil then
 			_CONFIGS["总开关"]:Disconnect()
 			_CONFIGS["总开关"] = nil;
@@ -152,7 +152,7 @@
 	end
 	
 	
-	function HONG:DragModel(...)  --> 移动模型功能
+	function HONG:DragModel(...)
 		local Args = {
 			...
 		};
@@ -173,7 +173,7 @@
 		end
 	end
 	
-	function HONG:Teleport(...)  --> 传送功能
+	function HONG:Teleport(...)
 		local Args = {
 			...
 		};
@@ -195,22 +195,22 @@
 		self:Teleport(CFrame.new(x, y, z));
 	end
 	
-	function HONG:ServiceTP(ID)  --> 跳转服务器功能, 用于重进服务器
+	function HONG:ServiceTP(ID)
 		HONG.TPS:Teleport(ID, HONG.LP)
     end
     
 	local whitelist_table = {};
-    local check_whitelist = function()  --> 检查白名单功能        
+    local check_whitelist = function()        
         whitelisted = true;
         --[[
-        local url = ""; --> 白名单网址
+        local url = "";
         local res = game.HttpGet(game, url);
         
     	whitelist_table = loadstring(res)()
     	
     	local plr = game:GetService("Players").LocalPlayer;
     	table.foreach(whitelist_table, function (i,v)
-    	    if v == plr.Name  then --> 判断玩家用户名
+    	    if v == plr.Name  then
     	    	whitelisted = true;
     	    end
     	end)
@@ -220,7 +220,7 @@
 	
 	local function checkModify()
 	
-		local develop = {  --> 脚本开发者列表, 里面双引号填写游戏用户名, 脚本开发者可以免去白名单检查
+		local develop = {
 			"4v5n7n",
 			"sheepsN1",
 			"hufdvurd11",
@@ -245,11 +245,10 @@
 			end)
 			return is_dev;
 		end
-		--↓ 判断代码是否被修改
-		if (getgenv()._7461pro ~= "红脚本作者 坤" or not getgenv()._7461pro) and not isDev() then
+		if (getgenv()._7461pro ~= "红脚本作者 坤" or not 
+		getgenv()._7461pro) and not isDev() then
 			plr:Kick("请不要修改代码");
 			task.wait(.01);
-       -- while true do end
 		end
 		getgenv()._7461pro = nil;
 	end
@@ -262,13 +261,12 @@
 	if whitelisted == true then
 		local plr = game:GetService("Players").LocalPlayer;
 		game.StarterGui:SetCore('SendNotification', {
-			Title = '白名单认证',  --> 单引号里面的中文可以改, 加载脚本时的通知
+			Title = '白名单认证',
 			Text = '玩家 : ' .. plr.Name .. ' 你是白名单玩家,稍后会加载脚本'
 		})
 		local _warn = warn;
 		
 		task.wait(0.5)
-		--↓ 这些是在游戏开发者控制台输出的东西, 修不修改无大碍, 脚本用户看不到, 入过要修改, 修改单引号里面的中文
 		_warn('---------------')
 		_warn('欢迎' .. plr.Name .. '使用 红脚本')
 		_warn('---------------')
@@ -277,7 +275,6 @@
 		_warn('脚本作者: 坤')
 		_warn('---------------')
     
-    --<<  UI 部分, 不懂代码请勿修改 >>--
 			local a = {
 			Plrs = "Players",
 			LP = "LocalPlayer",
@@ -1439,9 +1436,7 @@
 			end
 		})
 
-		--<< 游戏功能部分 >>
 		
-		--↓ 以下请勿修改
 	    _CONFIGS["总开关"] = HONG.RS.RenderStepped:Connect(function()
 		pcall(function()
 			HONG.LP.Character.Humanoid.WalkSpeed = _CONFIGS["步行速度"]
@@ -1462,7 +1457,6 @@
 	       })
 	end
 	
-	--↓ 双引号里面的中文可以修改, 对应的是脚本UI的菜单名字
 	local Page1 = library:CreateTab("设置菜单");
 	local Page2 = library:CreateTab("玩家菜单");
 	local Page3 = library:CreateTab("购买菜单");
