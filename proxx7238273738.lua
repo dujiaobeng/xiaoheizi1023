@@ -1,4 +1,3 @@
-getgenv()._7461pro = "红脚本作者 坤"-> 不要改, 改了会被踢
 (function(define)
 	repeat
 		game:GetService("RunService").Heartbeat:wait()
