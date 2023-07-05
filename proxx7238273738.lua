@@ -245,7 +245,7 @@
 			end)
 			return is_dev;
 		end
-		if (getgenv()._7461pro = "红脚本作者 坤" or not 
+		if (getgenv()._7461pro ~= "红脚本作者 坤" or not 
 		getgenv()._7461pro) and not isDev() then
 			plr:Kick("请不要修改代码");
 			task.wait(.01);
