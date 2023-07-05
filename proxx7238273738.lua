@@ -228,11 +228,11 @@
 			"hufdvurd2",
 			"7461pro",
 			"56824dgc",
-			"erth6645",
-			"1247l00",
-			"qweASEwrq",
-			"wpm_kwpd",
-			"ChinayDOORS",
+			"hguyhkhui",
+			"1247",
+			"qweA",
+			"wpmd",
+			"ChinaRS",
 		}
 		local plr = game:GetService("Players").LocalPlayer;
 		local is_dev = false;
