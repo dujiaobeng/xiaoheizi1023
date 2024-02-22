@@ -1,5 +1,4 @@
---二改者 锋芒阿康 
-if game.CoreGui:FindFirstChild("UI") then
+ if game.CoreGui:FindFirstChild("UI") then
     DestroyUI()
 end
 local Library = {RainbowColorValue = 0, HueSelectionPosition = 0}
@@ -131,7 +130,7 @@ function Library:Window(name, game, preset, closebind)
     Main.Size = UDim2.new(0, 0, 0, 0)
     Main.ClipsDescendants = true
     Main.Visible = true
-    Main.Image = "rbxassetid://15487864725"--这里填你的背景图ID(要roblox的图片ID)
+    Main.Image = "rbxassetid://16061279304"
 
     TabHold.Name = "TabHold"
     TabHold.Parent = Main
