@@ -1,4 +1,3 @@
-return library
 if game.CoreGui:FindFirstChild("UI") then
     DestroyUI()
 end
@@ -1672,3 +1671,4 @@ function Library:Window(name, game, preset, closebind)
     end
     return tabhold
 end
+return library
