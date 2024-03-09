@@ -344,15 +344,15 @@ function Library:Window(name, game, preset, closebind)
         local TabBtnIndicator = Instance.new("Frame")
         local TabBtnIndicatorCorner = Instance.new("UICorner")
 
-        TabBtn.Name = "TabBtn"
-        TabBtn.Parent = TabHold
-        TabBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        TabBtn.BackgroundTransparency = 1.000
-        TabBtn.Size = UDim2.new(0, 107, 0, 21)
-        TabBtn.Font = Enum.Font.SourceSans
-        TabBtn.Text = ""
-        TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
-        TabBtn.TextSize = 14.000
+        script.Name = "TabBtn"
+        script.Parent = TabHold
+        script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        script.BackgroundTransparency = 1.000
+        script.Size = UDim2.new(0, 107, 0, 21)
+        script.Font = Enum.Font.SourceSans
+        script.Text = ""
+        script.TextColor3 = Color3.fromRGB(0, 0, 0)
+        script.TextSize = 14.000
 
         TabTitle.Name = "TabTitle"
         TabTitle.Parent = TabBtn
