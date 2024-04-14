@@ -420,7 +420,7 @@ end
       Open.Draggable = true
       Open.MouseButton1Click:Connect(function()
           Main.Visible = not Main.Visible
-          Open.Text=Main.Visible and "隐藏" or "打开"
+          Open.Text=Main.Visible and "隐藏/打开" or "隐藏/打开"
       end)
       UIG.Parent = Open
       local window = {}
